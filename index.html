@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG-IN WEB DESIGN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+</head>
+<body>
+    <di class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="socail"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="social"><i class="fab fa-instagram"></i></a>
+                    <a href="social"><i class="fas fa-mail-bulk"></i></a>
+                </div>
+                <span>or use your LINKED-IN to register</span>
+                <input type="text" placeholder="Name">
+                <input type="e-mail" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign-In</h1>
+                <div class="social-container">
+                    <a href="socail"> <i class="fab fa-facebook-f"></i> </a>
+                    <a href="social"><i class="fab fa-instagram"></i></a>
+                    <a href="social"><i class="fas fa-mail-bulk"></i></a>
+                </div>
+                <span>or use your Account to register</span>
+                 <input type="e-mail" placeholder="E-mail">
+                <input type="password" placeholder="Password">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome to WEB-WORLD!!</h1>
+                    <p>Do create a Account to start up your learning! </p>
+                     <button class="press" id="SignIn">Sign-In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>WEB-WORLD</h1>
+                    <p>Learn your course and develope your web skills!</p>
+                    <button class="press" id="SignUp">Sign-In</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        const signUpButton = document.getElementById("SignUp");
+        const signInButton = document.getElementById("SignIn");
+        const container = document.getElementById("container");
+
+        signUpButton.addEventListener('click',()=>{
+            container.classList.add("right-panel-active");
+        })
+
+        signInButton.addEventListener('click',()=>{
+            container.classList.remove("right-panel-active");
+        })
+    </script>
+</body>
+</html>
